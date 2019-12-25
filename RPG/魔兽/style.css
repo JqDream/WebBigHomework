@@ -1,0 +1,94 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#head{
+	height: 40px;
+	margin-top: 0px;
+	background: #ebecf0;
+}
+#span1{
+	padding-top: 0.5em;
+	color: red;
+	position: absolute;
+}
+#span2{
+	padding-top: 0.4em;
+	padding-left: 400px;
+	color: red;
+	position: absolute;
+}
+#span3{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: red;
+	float: right;
+	top: 0px;
+	right: 300px;
+	position: absolute;
+}
+#head img{
+	width: 70px;
+	height: 40px;
+	background: white;
+	margin-left: 300px;
+}
+#box{
+	width: 1479px;
+	height: 780px;
+	background-image:url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#video{
+	width: 700px;
+	height: 700px;
+	margin-left: 400px;
+	margin-top: 80px;
+	position: absolute;
+}
+#DNF{
+	width: 80px;
+	height: 80px;
+	background-color: green;
+	margin-top: 233px;
+	margin-left: 1200px;
+	position: absolute;
+}
+#box1{
+	width: 250px;
+	height: 100px;
+	margin-top: 300px;
+	margin-left: 80px;
+	position: absolute;
+}
+#box2{
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin-top: 250px;
+	margin-left: 1150px;
+	position: absolute;
+}
+#box3{
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin-top: 450px;
+	margin-left: 1140px;
+	position: absolute;
+}
+#word{
+	color: white;
+}
+#include{
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+}
