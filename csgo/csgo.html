@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="1.css">
+	<script src="animate.js"></script>
+    <title></title>
+</head>
+<body>
+	<div class="navbox">
+		<div class="nav">
+		<div class="logo">
+			<a href="" class="logoimg"><img src="logo (1).png"></a>
+		</div>
+		<div class="navlist">
+			<a href="">
+				<span></span>
+				<h4>首页</h4>	
+			</a>
+			<a href="">
+				<span></span>
+				<h4>新闻资讯</h4>
+			</a>
+			<a href="">
+				<span></span>
+				<h4>活动中心</h4>
+			</a>
+			<a href="">
+				<span></span>
+				<h4>玩家攻略</h4>
+			</a>
+			<a href="csgo2.html">
+				<span></span>
+				<h4>游戏资料</h4>
+			</a>
+			<a href="">
+				<span></span>
+				<h4>军需商店</h4>
+			</a>
+			<a href="">
+				<span></span>
+				<h4>个人中心</h4>
+			</a>
+			<div class="nav2">
+                <div class="up" id="up" onclick="xianshi()">
+                    <a href="#"><img class="touxiang" id="touxiang" src="登录.jpg"></a>
+                    <div class="sign" id="sign">
+                        <p class="signtxt">登录使用更多功能</p>
+                        <div class="upin">
+                            <a href="#"><p class="upintxt" onclick="xianshi()">登录/注册</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="up2" id="up2">
+                    <a href="#" ><img class="touxiang2" id="touxiang2" src="头像.jpg"></a>
+                    <div class="signhou" id="signhou">
+                        <div class="houtouxiang">
+                            <a href="#"><img src="头像.jpg"></a>
+                            <a href="#"><p>嘿嘿嘿</p></a>
+                        </div>
+                        <div class="gongneng">
+                            <a href="#"><div class="shoucang">我的收藏</div></a>
+                            <a href="#"><div class="buy">已购游戏</div></a>
+                        </div>
+                        <a href="#"><p class="guanli">账号管理</p></a>
+                        <a href="#"><p class="tuichu" onclick="tuichu()">退出登录</p></a>
+                    </div>
+                </div>
+            </div>
+               <div class="updiv" id="div1">
+        <div class="close">
+            <button onclick="guanbi()">close</button>
+        </div>
+        <div class="upkuang" >
+            <div class="zhdl">
+                <p class="zhdltxt">账号登录</p>
+                <input class="inp1" type="text" placeholder="手机号/邮箱" id="yhm" onblur="hide()" onfocus="find()">
+                <p class="notice" id="n1" style="font-size: 10px;" ></p>
+                <input class="inp2" type="password" placeholder="密码" id="mm" onfocus="find2()" onblur="hide2()">
+                <p class="notice" id="n2" style="font-size: 10px;"></p>
+                <input type="checkbox" checked><p class="jizhu">记住我</p>
+                <p class="forget"><a href="#">忘记密码</a></p>
+                <button class="up22" onclick="check()">登录</button></br></br></br>
+                <p class="zhuce" onclick="xszc()"><a href="#">注册</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="zhucediv" id="div2">
+        <div class="close2">
+            <button onclick="guanbi2()">X</button>
+        </div>
+        <dic class="zckuang">
+            <p class="zhdltxt">注册账号</p>
+            <input class="inp11" type="text" placeholder="手机号/邮箱" id="yhm11" onblur="hide3()" onfocus="find3()">
+            <p class="notice" id="n11" style="font-size: 10px;" ></p>
+            <input class="inp22" type="password" placeholder="密码" id="mm11" onfocus="find4()" onblur="hide4()">
+            <p class="notice" id="n22" style="font-size: 10px;"></p>
+            <input class="inp22" type="password" placeholder="再次输入密码" id="mm12" onfocus="find5()" onblur="hide5()">
+            <p class="notice" id="n33" style="font-size: 10px;"></p>
+            <button class="zhuce22" onclick="zcgb()">注册</button>
+        </dic>
+    </div>
+		</div>
+	</div>
+	<div class="jjs"> 
+        <img src="7.jfif">	
+    </div>
+	<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="2.jpg" alt=""></div>
+			<div class="slide"><img src="2.jfif" alt=""></div>
+			<div class="slide"><img src="1.jpg" alt=""></div>
+			<div class="slide"><img src="3.jfif" alt="" class="simg"></div>
+			<div class="slide"><img src="4.jfif" alt="" class="bimg"></div>
+			<div class="slide"><img src="2.jpg" alt=""></div>
+			<div class="slide"><img src="2.jfif" alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<ul class="nav1" id="nav1">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<div class="module-help">
+        <div class="module-inner">
+            <div class="links">
+                <a href="" class="zzfu" target="_blank"></a>
+   <!--              <a href="" class="txzcx" target="_blank"></a> -->
+                <a href="" class="zxkefu" target="_blank"></a>
+                <a href="###" class="weibo"></a>
+                <a href="###" class="weixin"></a>
+                <a href="" class="bbs" target="_blank"></a>
+                <a href="" class="wanmeidz" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bottom" style="" id="J_csgo_footer_bar">        
+    	<div class="rel1100">            
+    		<dl class="foot_dl">                
+    			<dt>                
+    				<a class="wanmei" href="http://www.wanmei.com/" target="_blank">                    <img src="https://www.csgo.com.cn/images/footer/logo-wanmei20180327.png" alt="完美世界">                
+    				</a>                
+    				<a href="http://www.valvesoftware.com/" target="_blank">                    <img src="https://www.csgo.com.cn/images/footer/logo-valve.png" alt="完美世界">                
+    				</a>            
+    			</dt>                
+    			<dd>© 完美世界 版权所有　Perfect World. All Rights Reserved.<br>© 2012 Valve Corporation. All Rights reserved. Licensed to Perfect World Co., Ltd. in China
+    			</dd>            
+    		</dl>            
+    		<p class="certificate">京ICP备15025398号-2
+    			<a href="//www.csgo.com.cn/web201709/cover1709/cultrue.html" target="_blank">《网络文化经营许可证》编号： 京网文[2017]8929-1007号
+    			</a> | 京公网安备11010502033648号<br>
+    			<a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08c5a8e023e015aa2573b6a3e20" target="_blank">
+    				<img src="https://www.csgo.com.cn/images/footer/icon-gamenettag.png" alt=""> 文网游进字[2017] 0084号
+    			</a> 新广出审[2017] 6738号 皖网文许字[2014]1281-020号 ISBN: 978-7-7979-0692-0 | 
+    			<a href="http://www.wanmei.com/jiazhang/index.htm" target="_blank"> 家长监护</a> | 
+    			<a href="http://cs.wanmei.com/" target="_blank"> 纠纷处理
+    			</a> | 
+    			<a href="https://img.csgo.com.cn/csgo/a1/c5/a1c579df1b601d19182936f37ffe05331562302036.jpg" target="_blank">营业执照
+    			</a> | 
+    			<a href="http://static.wanmei.com/passport/agreement/children.html" target="_blank">儿童隐私保护指引
+    			</a>
+    			<span class="remark">本网络游戏适合年满17岁以上的用户使用：请您确定已如实进行实名注册。为了您的健康，请合理控制游戏时间。
+    			</span>
+    		</p>        
+    	</div> -->
+    <!-- </div> -->
+    <div class="end">
+        <div class="end1">
+            <div class="end11">
+                <p>关注我们:</p>
+                <div class="tp0">
+                    <img class="tp"src="qq.png">
+                    <div class="tp2">
+                    </div>
+                </div>
+                <div class="tp0">
+                    <img class="tp" src="wx.png">
+                    <div class="tp3">
+                    </div>
+                </div>
+                <div class="tp0">
+                    <img class="tp" src="wb.png">
+                    <div class="tp2">
+                    </div>
+                </div>                
+            </div>
+            <div class="end12">
+                <div class="join">
+                    <div class="jointxt">
+                        <p>加入我们</p>
+                    </div>
+                    <ul class="joinlist">
+                        <li><a href="#">面对面</a></li>
+                        <li><a href="#">网络视频</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="contacttxt">
+                        <p>联系我们</p>
+                    </div>
+                    <ul class="contactlist">
+                        <li><a href="#">客户服务</a></li>
+                        <li><a href="#">合作洽谈</a></li>
+                        <li><a href="#">媒体及投资者</a></li>
+                    </ul>
+                </div>
+                <div class="legao">
+                    <div class="legaotxt">
+                        <p>法律信息</p>
+                    </div>
+                    <ul class="legaolist">
+                        <li><a href="#">服务协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">知识产权</a></li>
+                    </ul>
+                </div>
+                <div class="endlogo">
+                    <h1>搞事情搞事情</h1>
+                </div>
+                <div class="endend">
+                    <ul class="endendlist">
+                        <li><a href="#">法律声明</a></li>
+                        <li><a href="#">价值观</a></li>
+                        <li><a href="#">网站地图</a></li>
+                        <li><a href="#">XXXX</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+	
+	
+<script type="text/javascript">
+	var box=document.getElementById("box");
+	var oNavlist=document.getElementById("nav1").children;
+	var slider=document.getElementById("slider");
+	var left=document.getElementById("left");
+	var right=document.getElementById("right");
+	var index=1;
+	var timer;
+	var isMoving=false;
+	//轮播下一张函数
+	function next(){
+		if(!isMoving){
+			isMoving=true;
+			index++;
+			navChange();
+			animate(slider,{left:-900*index},function(){
+				if(index===6){
+					slider.style.left="-900px";
+					index=1;
+				}
+				isMoving=false;
+			});
+		}	
+	}
+	function previous(){
+		if(!isMoving){
+			isMoving=true;
+			index--;
+			navChange();
+			animate(slider,{left:-900*index},function(){
+				if(index===0){
+					slider.style.left="-4500px";
+					index=5;
+				}
+				isMoving=false;
+			});
+		}	
+	}
+	var timer=setInterval(next,3000);
+	//鼠标划入清定时器
+	box.onmouseover=function(){
+		animate(left,{opacity:50});
+		animate(right,{opacity:50});
+		clearInterval(timer);
+	}
+	//鼠标划出开定时器
+	box.onmouseout=function(){
+		animate(left,{opacity:0});
+		animate(right,{opacity:0});
+		timer=setInterval(next,3000);
+	}
+	right.onclick=next;
+	left.onclick=previous;
+	//小按钮点击事件
+	for(var i=0;i<oNavlist.length;i++){
+		oNavlist[i].idx=i;
+		oNavlist[i].onclick=function(){
+			index=this.idx+1;
+			navChange();
+			animate(slider,{left:-900*index});
+		}
+	}
+	//小按钮背景色切换
+	function navChange(){
+		for(var i=0;i<oNavlist.length;i++){
+			oNavlist[i].className="";
+		}
+		if(index===6){
+			oNavlist[0].className="active";
+		}else if(index===0){
+			oNavlist[4].className="active";
+		}else{
+			oNavlist[index-1].className="active";
+		}
+	}
+	function find(){
+	n1.innerHTML="请输入4~10位用户名";
+}
+function hide(){
+	n1.innerHTML="";
+}
+function find2(){
+	n2.innerHTML="请输入6~12位密码";
+}
+function hide2(){
+    n2.innerHTML="";
+}
+function RPG1(){
+    first1.style.backgroundImage="url(巫师3.jpg)";
+}
+function MOBA1(){
+    first1.style.backgroundImage="url(英雄联盟1.jpg)";
+}
+function FPS1(){
+    first1.style.backgroundImage="url(使命召唤3.jpg)";
+}
+function UN1(){
+    first1.style.backgroundImage="url(MC.jpg)";
+}
+function xianshi(){
+    document.getElementById('div1').style.display='block';
+}
+function guanbi(){
+    document.getElementById('div1').style.display='none';
+}
+function shipin1(){
+    document.getElementById('shipin1').style.display='block';
+}
+function shipin1hide(){
+    var z=document.getElementById("shipin11");
+    document.getElementById('shipin1').style.display='none';
+    z.load();
+}
+function shipin2(){
+    document.getElementById('shipin2').style.display='block';
+}
+function shipin2hide(){
+    var x=document.getElementById("shipin22");
+    document.getElementById('shipin2').style.display='none';
+    x.load();
+}
+function shipin3(){
+    document.getElementById('shipin3').style.display='block';
+}
+function shipin3hide(){
+    var c=document.getElementById("shipin33");
+    document.getElementById('shipin3').style.display='none';
+    c.load();
+}
+function check(){
+    var i=document.getElementById("yhm").value.length;
+    var j=document.getElementById("mm").value.length;
+    var k=document.getElementById("touxiang");		
+    if(i==w&&j==q){
+        document.getElementById('div1').style.display='none';
+        // k.src="头像.jpg";
+        document.getElementById('up').style.display='none';
+        document.getElementById('up2').style.display='block';
+    }
+    else if(i!=w){
+        var p1=document.getElementById("n1")
+        var text1=document.createTextNode( "用户名不存在" ); 
+        p1.appendChild(text1);
+    }
+    else if(j!=q){
+        var p2=document.getElementById("n2")
+        var text2=document.createTextNode( "密码错误" ); 
+        p2.appendChild(text2);
+    }
+    else{
+        var p1=document.getElementById("n1")
+        var text1=document.createTextNode( "请输入用户名" ); 
+        p1.appendChild(text1);
+        var p2=document.getElementById("n2")
+        var text2=document.createTextNode( "请输入密码位" ); 
+        p2.appendChild(text2);
+    }
+
+}
+function tuichu(){
+    document.getElementById('up2').style.display='none';
+    document.getElementById('up').style.display='block';            
+}
+function xszc(){
+    document.getElementById('div1').style.display='none';
+    document.getElementById('div2').style.display='block';
+}
+function guanbi2(){
+    document.getElementById('div2').style.display='none';
+}
+var w;
+function find3(){
+	n11.innerHTML="请输入4~10位用户名";
+}
+function hide3(){
+    n11.innerHTML="";
+    w=document.getElementById("yhm11").value.length;
+    if(w<=10&&w>=4){
+        var p1=document.getElementById("n11")
+        var text1=document.createTextNode( "账号可用" ); 
+        p1.appendChild(text1);
+    }
+    else if(w>10||w<4&&w>0){
+        var p1=document.getElementById("n11")
+        var text1=document.createTextNode( "用户名位数不对" ); 
+        p1.appendChild(text1);
+    }
+    else{
+        var p1=document.getElementById("n11")
+        var text1=document.createTextNode( "请输入4~10位用户名" ); 
+        p1.appendChild(text1);
+    }
+}
+var q;
+function find4(){
+	n22.innerHTML="请输入6~12位密码";
+}
+function hide4(){
+    n22.innerHTML="";
+    q=document.getElementById("mm11").value.length;
+    if(q<=12&&q>=6){
+        var p1=document.getElementById("n22")
+        var text1=document.createTextNode( "密码可用" ); 
+        p1.appendChild(text1);
+    }
+    else if(q>12||q<6&&q>0){
+        var p1=document.getElementById("n22")
+        var text1=document.createTextNode( "密码位数不对" ); 
+        p1.appendChild(text1);
+    }
+    else{
+        var p1=document.getElementById("n22")
+        var text1=document.createTextNode( "请输入6~12位密码" ); 
+        p1.appendChild(text1);
+    }
+}
+var k;
+function find5(){
+	n33.innerHTML="请再次输入密码";
+}
+function hide5(){
+    n33.innerHTML="";
+    var k=document.getElementById("mm12").value.length;
+    if(k==q){
+        var p1=document.getElementById("n33")
+        var text1=document.createTextNode( "密码相同" ); 
+        p1.appendChild(text1);
+    }
+    else{
+        var p1=document.getElementById("n33")
+        var text1=document.createTextNode( "密码不同" ); 
+        p1.appendChild(text1);
+    }
+}
+function zcgb(){
+    document.getElementById('div2').style.display='none';
+    document.getElementById('div1').style.display='block';
+}
+</script>
+</html>
