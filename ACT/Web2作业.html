@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			text-align:center;
+		}
+		#Box{
+			width: 100%;
+			height: 2600px;
+			background-color:#f2f2f2;
+		}
+		#topBox{
+			width: 100%;
+			height: 72px;
+			/* background-image: url('best.jpg'); */
+			background-repeat: repeat-x;
+		}
+		#midBox{
+			width: 1200px;
+			height: 2400px;
+			/* background-color: green; */
+			margin: 0 auto;
+		}
+		#endBox{
+			width: 100%;
+			height: 400px;
+			/* background-color: yellow; */
+		}
+		#firstPhoto{
+			float: left;
+		}
+		#leftTop{
+			float: left;
+			width: 800px;
+			height: 1400px;
+			margin-top: 30px;			
+		}
+		#left{
+			float: left;
+			width: 750px;
+			height: 1400px;
+			/* background-color: red; */
+		}
+		#rightTop{
+			float: left;
+			width: 400px;
+			height: 1400px;
+			margin-top: 30px;
+			background-color: #ffffff;
+			/* background-image: url('排行榜背景图.jpg') */
+		}
+		#firstWordLeft{
+			float: left;
+		}
+		#wordLeft{/*这是排行榜的大小 */
+			float: left;
+			width: 250px;
+			height: 25px;
+			border-style: solid;
+			border-color: #ffe4e1;
+			border-width: thin;
+			border-right-style: none;
+		}
+		#pictureFloat{
+			float: right;
+		}
+		#pictureFloat2{
+			float: left;
+		}
+		h1{
+			color: black;
+			font-family: "MicrosoftJhengHei";
+			font-size: 30px;
+			float: left;
+		}
+		#logo{
+			width: 400px;
+			height: 200px;
+
+		}
+		#leftFirst{
+			width: 750px;
+			height: 400px;
+			border-width: thin;
+			border-style: solid;
+			border-color: white;
+			background-color: #ffffff;
+		}
+		#p1{
+			width: 750px;
+			height: 350px;
+			background-image: url('绝地求生.jpg');
+			background-size: 100% 100%;
+		}
+		#p1word{
+			width: 700px;
+			height: 50px
+			background-color: white;
+		}
+		#chicken{
+			/* width: 750px;
+			height: 25px; */
+			font-family: "MicrosoftJhengHei";
+			font-size: 15px;
+			float: left;
+		}
+		#smallc{
+			/* width: 750px;
+			height: 25px; */
+			font-family: 微软雅黑;
+			font-size: 10px;
+			float: left;
+		}
+		#c1{
+			width: 750px;
+			height: 25px;
+		}
+		#chickenpj{
+			font-size: 10px;
+			float: right;
+		}
+		#chickenpj2{
+			font-size: 20px;
+			float: right;
+		}
+		#leftSecond{
+			width: 750px;
+			height: 400px;
+			border-width: thin;
+			border-style: solid;
+			border-color: white;
+			background-color: #ffffff;
+			margin-top: 25px;
+		}
+		#p2{
+			width: 750px;
+			height: 350px;
+			background-image: url('CSGO.jpg');
+			background-size: 100% 100%;
+		}
+		#p3{
+			width: 750px;
+			height: 350px;
+			background-image: url('使命召唤6.jpg');
+			background-size: 100% 100%;
+		}
+		#p4{
+			width: 750px;
+			height: 350px;
+			background-image: url('生化危机.jpg');
+			background-size: 100% 100%;
+		}
+		#aaa{
+			color: blue;
+		}
+		* {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        
+        body {
+            padding: 20px;
+        }
+        
+        #container {
+            position: relative;
+            width: 1200px;
+            height: 400px;
+            border: 3px solid #333;
+            overflow: hidden;
+        }
+        
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 8400px;
+            height: 400px;
+        }
+        
+        #list img {
+            float: left;
+            width: 600px;
+            height: 400px;
+        }
+        
+        #buttons {
+            position: absolute;
+            left: 250px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        
+        #buttons span {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        
+        #buttons .on {
+            background: orangered;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 180px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-align: center;
+            color: #fff;
+            background-color: RGBA(0, 0, 0, .3);
+            cursor: pointer;
+        }
+        
+        .arrow:hover {
+            background-color: RGBA(0, 0, 0, .7);
+        }
+        
+        #container:hover .arrow {
+            display: block;
+        }
+        
+        #prev {
+            left: 20px;
+        }
+        
+        #next {
+            right: 20px;
+        }	
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: pink;
+}
+a:active{
+    color: pink;
+}
+.first{
+    background-size:100% 100%;
+    height: 800px;
+}
+.whole{
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    width: 1240px;
+    height: 72px;
+    position: relative;
+    background: rgba(10, 10, 10, 0.7);
+}
+.logo{
+    display: block;
+    height: 35px;
+    width: 168px;
+    left: 0px;
+    top: 13px;
+    position: absolute;
+}
+.logo h1{
+    display: block;
+    height: 35px;
+    width: 168px;
+    overflow: hidden;
+    font-size: 30px;
+}
+.menu{
+    position: absolute;
+    display: block;
+    height: 70px;
+    top: 0px;
+    right: 500px;
+}
+.nav:hover{
+    background: rgba(10, 10, 10, 0.7);
+}
+.item{
+    display: inline-block;
+    height: 70px;
+    width: 102px;
+    float:left;
+    text-align: center;
+}
+.txt{
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menuxiala{
+    background: rgba(10, 10, 10, 0.7);
+    width: 98px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    color: black;
+    line-height: 50px;
+}
+.item:hover .menuxiala{
+    display: block;
+}
+.nav1{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 150px;
+    background-color: 
+}
+.up{
+    display: block;
+    position: absolute;
+    right: 0px;
+
+    top: 0px;
+    width: 150px;
+}
+.up img{
+    max-width: 50px;
+    position: absolute;
+    right: 2px;
+}
+.up2{
+    display: none;
+}
+.up2 img{
+    max-width: 50px;
+    position: absolute;
+    right: 2px;
+}
+/* .up:hover .sign{
+    display: block;
+}
+.up2:hover .signhou{
+    display: block;
+} */
+.sign{
+    background: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    z-index: 1000;
+    top: 52px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: thistle;
+    display: none;
+}
+.signtxt{
+    line-height: 50px;
+}
+.upin{
+    border-radius:5px 5px 5px 5px;
+    background: royalblue;
+    margin: 0 auto;
+    color: white;
+    width: 160px;
+    height: 30px;
+    padding-top: 6px;
+}
+.signhou{
+    background: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    top: 52px;
+    width: 200px;
+    height: 170px;
+    color: white;
+    display: none;
+}
+.houtouxiang img{
+    max-width: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.houtouxiang p{
+    line-height: 60px;
+    margin-left: 100px;
+}
+.gongneng{
+    margin: 0 auto;
+    height: 60px;
+    width: 180px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgb(54, 53, 53);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.shoucang{
+    float: left;
+    width: 60px;
+    height: 60px;
+    background:royalblue ;
+    border-radius:5px 5px 5px 5px;
+    font-size: 22px;
+    text-align: center;
+}
+.buy{
+    float: right;
+    width: 60px;
+    height: 60px;
+    background:royalblue ;
+    border-radius:5px 5px 5px 5px;
+    font-size: 22px;
+    text-align: center;
+}
+.guanli{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    float: left;
+    margin-left: 5px;
+}
+.tuichu{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    float: right;
+    margin-right: 5px;
+}
+.whole2{
+    height: 728px;
+}
+.whole2txt{
+    color: white;
+    width: 1200px;
+    height: 270px;
+    font-style: italic;
+    padding-top: 30px;
+    line-height: 80px;
+}
+.whole2txt h1{
+    font-size: 50px;
+    margin-left: 15px;
+}
+.whole2txt h2{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.whole2txt h3{
+    margin-left: 300px;
+}
+.RPG{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    position: relative;
+}
+.MOBA{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    margin-left: 61px;
+    position: relative;
+}
+.FPS{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    margin-left: 61px;
+    position: relative;
+}
+.unspent{
+    margin-top: 10px;
+    float: right;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    position: relative;
+}
+.txt2{
+    color: white;
+    font-style: italic;
+    position: absolute;
+}
+.big1{
+    font-size: 50px;
+    margin-left: 60px;
+    margin-top: 115px;
+}
+.big2{
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 115px;
+}
+
+    font-size: 50px;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: 115px;
+}
+.big4{
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 135px;
+}
+.hide{
+    height: 300px;
+    width: 250px;
+    background: white;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-family: "方正舒体";
+    font-size: 18px;
+    display: none;
+    position: absolute;
+}
+.RPG:hover .hide{
+    display: block;
+}
+.RPG:hover .txt2{
+    display: none;
+}
+.RPGhide{
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.MOBA:hover .hide{
+    display: block;
+}
+.MOBA:hover .txt2{
+    display: none;
+}
+.MOBAhide{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.FPS:hover .hide{
+    display: block;
+}
+.FPS:hover .txt2{
+    display: none;
+}
+.FPShide{
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.unspent:hover .hide{
+    display: block;
+}
+.unspent:hover .txt2{
+    display: none;
+}
+.hide1{
+    padding-top: 130px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.paiming{
+    width: 1185px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.hot{
+    float: left;
+    background: rgba(54, 54, 58, 0.7);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.game div{
+    border-radius: 5px 5px 5px 5px;
+}
+.hottxt{
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+.game{
+    font-size: 14px;
+    line-height: 25px;
+}
+.game1{
+    color: tomato;
+}
+.t1{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-top: 1px;
+    margin-left: 1px;
+    display: inline-block;
+    width: 30px;
+}
+.t2{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 130px;
+}
+.t3{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 40px;
+}
+.t4{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 38px;
+}
+.t5{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 40px;
+}
+.t6{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 30px;
+}
+.game2{
+    position: relative;
+}
+.hy{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -80px;
+    left: 400px;
+    display: none;
+}
+.hy1{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -106px;
+    left: 400px;
+    display: none;
+}
+.hy2{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -132px;
+    left: 400px;
+    display: none;
+}
+.jieshao1{
+    float: right;
+    font-size: 70px;
+    margin-top: 170px;
+    font-style: italic;
+}
+.end{
+    
+    background: black;
+    height: 400px;
+}
+.end1{
+    background:silver;
+    height: 400px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.end11{
+    background: black;
+    height: 60px;
+    padding-top: 17px;
+}
+.end11 p{
+    font-size: 28px;
+    color: white;
+    margin-left: 20px;
+    display: inline;
+}
+.tp0{
+    display: inline;
+    position: relative;
+}
+.tp{
+    margin-left: 20px;
+}
+.tp2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 10px;
+    top: -121px;
+    background: white;
+    background-image: url(qqerwi.png);
+    background-size:100% 100%;
+    display: none;
+}
+.tp0:hover .tp2{
+    display: block;
+}
+.tp3{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 10px;
+    top: -121px;
+    background: white;
+    background-image: url(wxerwi.png);
+    background-size:100% 100%;
+    display: none;
+}
+.tp0:hover .tp3{
+    display: block;
+}
+.end12{
+    background: black;
+    height: 282px;
+    margin-top: 2px;
+    padding-top: 40px;
+    position: relative;
+}
+.join{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.jointxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.joinlist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.contact{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.contacttxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.contactlist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.legao{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.legaotxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.legaolist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.endlogo{
+    float: right;
+    margin-top: 90px;
+    margin-right: 150px;
+    color: turquoise;
+    font-style: italic;
+}
+.endend{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.endendlist li{
+    float: left;
+    width: 100px;
+    font-size: 14px;
+}
+.updiv{
+    display: none;
+    width: 700px;
+    height: 350px;
+    position: fixed;
+    z-index: 1000;
+    top: 220px;
+    left: 400px;
+    background-image: url(只狼2.jpg);
+    background-size:100% 100%;
+}
+.close{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    opacity: 0.1;
+}
+.upkuang{
+    width: 340px;
+    height: 300px;
+    background:gainsboro;
+    opacity: 0.8;
+    margin-left: 25px;
+    position: relative;
+}
+.zhdl{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.zhdltxt{
+    font-size: 25px;
+}
+.notice{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.inp1{
+    display: block;
+    width:300px;
+    height: 40px;
+    text-indent: 8px;
+    margin-top: 30px;
+    margin-left: 7px;
+}
+.inp2{
+    display: block;
+    width:300px;
+    height: 40px;
+    text-indent: 8px;
+    margin-left: 7px;
+}
+.jizhu{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+}
+.forget{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+    float: right;
+}
+.zhuce{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+    float: right;
+    margin-top: 6px;
+}
+.up22{
+    position: absolute;
+    top: 230px;
+    left: 9px;
+    border-radius:50px 50px 50px 50px;
+    background: aqua;
+    width:300px;
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+.zhucediv{
+    display: none;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    z-index: 1000;
+    top: 220px;
+    left: 600px;
+    background: white;
+    border-radius:5px 5px 5px 5px;
+}
+.inp11{
+    display: block;
+    width:250px;
+    height: 30px;
+    text-indent: 8px;
+    margin-top: 30px;
+    margin-left: 7px;
+}
+.inp22{
+    display: block;
+    width:250px;
+    height: 30px;
+    text-indent: 8px;
+    margin-left: 7px;
+}
+.zhuce22{
+    position: absolute;
+    top: 280px;
+    left: 45px;
+    border-radius:50px 50px 50px 50px;
+    background: aqua;
+    width:200px;
+    text-align: center;
+    height: 30px;
+    color: white;
+}
+ */
+
+	</style>
+</head>
+<body>
+	<div id="Box">
+		<div class="nav">
+                <a class="logo" href="#">
+                    <h1>搞事搞事</h1>
+                </a>
+                <ul class="menu">
+                    <li class="item">
+                        <a class="txt" href="#">首页</a>
+                    </li>
+                    <li class="item">
+                        <a class="txt" href="#">商城</a>
+                        <ul class="menuxiala">
+                            <li><a href="#">精选</a></li>
+                            <li><a href="#">浏览</a></li>
+                            <li><a href="#">鉴赏</a></li>
+                            <li><a href="#">愿望单</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a class="txt" href="#">新闻</a>
+                        <ul class="menuxiala">
+                            <li><a href="#">游戏赛事</a></li>
+                            <li><a href="#">最新上线</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a class="txt" href="#">个人空间</a>
+                        <ul class="menuxiala">
+                            <li><a href="#">动态</a></li>
+                            <li><a href="#">个人资料</a></li>
+                            <li><a href="#">好友</a></li>
+                            <li><a href="#">徽章</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav1">
+                    <div class="up" id="up" onclick="xianshi()">
+                        <a href="#"><img class="touxiang" id="touxiang" src="登录.jpg"></a>
+                        <div class="sign" id="sign">
+                            <p class="signtxt">登录使用更多功能</p>
+                            <div class="upin">
+                                <a href="#"><p class="upintxt" onclick="xianshi()">登录/注册</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up2" id="up2">
+                        <a href="#" ><img class="touxiang2" id="touxiang2" src="头像.jpg"></a>
+                        <div class="signhou" id="signhou">
+                            <div class="houtouxiang">
+                                <a href="#"><img src="头像.jpg"></a>
+                                <a href="#"><p>嘿嘿嘿</p></a>
+                            </div>
+                            <div class="gongneng">
+                                <a href="#"><div class="shoucang">我的收藏</div></a>
+                                <a href="#"><div class="buy">已购游戏</div></a>
+                            </div>
+                            <a href="#"><p class="guanli">账号管理</p></a>
+                            <a href="#"><p class="tuichu" onclick="tuichu()">退出登录</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<div id="midBox">
+			<div id="topTop">
+				<div id="container">
+			         <div id="list" style="left: -600px;">
+			             <img src="5.jpg" alt="1" />
+			             <img src="1.jpg" alt="1" />
+			             <img src="2.jpg" alt="2" />
+			             <img src="3.jpg" alt="3" />
+			             <img src="4.jpg" alt="4" />
+			             <img src="5.jpg" alt="5" />
+			             <img src="1.jpg" alt="5" />
+			         </div>
+			         <div id="buttons">
+			             <span index="1" class="on"></span>
+			             <span index="2"></span>
+			             <span index="3"></span>
+			             <span index="4"></span>
+			             <span index="5"></span>
+			         </div>
+			         <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+			         <a href="javascript:;" id="next" class="arrow">&gt;</a>
+			     </div>
+		
+		</div>
+			<div id="leftTop">
+				<div id="left">
+					<div id="leftFirst">
+						<div id = "p1">
+							<!-- <img src="绝地求生.jpg"> -->
+						</div>	
+						<div id="p1word">
+							<div id="c1">
+								<div id="chicken"><a href="#" id="aaa">绝地求生：大逃杀</a></div>
+								<div id="chickenpj">47859人评分</div>
+							</div>
+							<div id="c1">
+								<div id="smallc">100人公平竞技，在公平的战斗中大展拳脚，享受竞技的乐趣！大吉大利，今晚第一！</div>
+								<div id="chickenpj2">⭐8.2</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="leftSecond">
+						<div id = "p2">
+							<!-- <img src="绝地求生.jpg"> -->
+						</div>	
+						<div id="p1word">
+							<div id="c1">
+								<div id="chicken"><a href="#" id="aaa">CSGO</a></div>
+								<div id="chickenpj">65052人评分</div>
+							</div>
+							<div id="c1">
+								<div id="smallc">全新裂网大行动重装突袭,新剧情玩法、新角色皮肤、新地图皮肤、新武器箱、新匕首,带你重拳出击!</div>
+								<div id="chickenpj2">⭐8.7</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="leftSecond">
+						<div id = "p3">
+							<!-- <img src="绝地求生.jpg"> -->
+						</div>	
+						<div id="p1word">
+							<div id="c1">
+								<div id="chicken"><a href="#" id="aaa">使命召唤6</a></div>
+								<div id="chickenpj">21857人评分</div>
+							</div>
+							<div id="c1">
+								<div id="smallc">使命召唤4续作，震撼上线！</div>
+								<div id="chickenpj2">⭐8.0</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="leftSecond">
+						<div id = "p4">
+							<!-- <img src="绝地求生.jpg"> -->
+						</div>	
+						<div id="p1word">
+							<div id="c1">
+								<div id="chicken"><a href="#" id="aaa">生化危机</a></div>
+								<div id="chickenpj">19879人评分</div>
+							</div>
+							<div id="c1">
+								<div id="smallc">儿·瓦伦丁等幸存下来的队员打算将真相公之于众，可连警察组织也受到保护伞公司的掌控，他们的告发终究还是被扼杀了。</div>
+								<div id="chickenpj2">⭐7.8</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="rightTop">
+				<div id="logo">
+					<img src="logo.png"/>
+				</div>
+				<div  id="firstWordLeft">
+					<h1>热门游戏排行榜</h1>
+					<div id="wordLeft"><a href="#" id="aaa">
+						1.荒野大镖客2
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="上升.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					2.只狼：影逝二度</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="上升.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					3.侠盗猎车手5</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="下降.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					4.NBA2konline2</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="上升.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					5.使命召唤6</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="下降.jpg"/>
+					</div>
+					<div id="wordLeft"> <a href="#" id="aaa">
+					6.我的世界</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="下降.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					7.侠盗猎车手4</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="上升.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					8.看门狗2</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="下降.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					9.刺客信条：枭雄</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="上升.jpg"/>
+					</div>
+					<div id="wordLeft"><a href="#" id="aaa">
+					10.杀手4</a>
+					</div>
+					<div id="pictureFloat2">
+						<img id="pictureFloat" src="下降.jpg"/>
+					</div>
+					<div id="wordLeft"> <a href="#" id="aaa">
+					11.………………</a>
+					</div>
+				</div>
+				<div id="pinglun">
+					
+				</div>
+			</div> 
+			
+		</div>
+		   <div class="end">
+        <div class="end1">
+            <div class="end11">
+                <p>关注我们:</p>
+                <div class="tp0">
+                    <img class="tp" src="qq.png">
+                    <div class="tp2">
+                    </div>
+                </div>
+                <div class="tp0">
+                    <img class="tp" src="wx.png">
+                    <div class="tp3">
+                    </div>
+                </div>
+                <div class="tp0">
+                    <img class="tp" src="wb.png">
+                    <div class="tp2">
+                    </div>
+                </div>                
+            </div>
+            <div class="end12">
+                <div class="join">
+                    <div class="jointxt">
+                        <p>加入我们</p>
+                    </div>
+                    <ul class="joinlist">
+                        <li><a href="#">面对面</a></li>
+                        <li><a href="#">网络视频</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="contacttxt">
+                        <p>联系我们</p>
+                    </div>
+                    <ul class="contactlist">
+                        <li><a href="#">客户服务</a></li>
+                        <li><a href="#">合作洽谈</a></li>
+                        <li><a href="#">媒体及投资者</a></li>
+                    </ul>
+                </div>
+                <div class="legao">
+                    <div class="legaotxt">
+                        <p>法律信息</p>
+                    </div>
+                    <ul class="legaolist">
+                        <li><a href="#">服务协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">知识产权</a></li>
+                    </ul>
+                </div>
+                <div class="endlogo">
+                    <h1>搞事情搞事情</h1>
+                </div>
+                <div class="endend">
+                    <ul class="endendlist">
+                        <li><a href="#">法律声明</a></li>
+                        <li><a href="#">价值观</a></li>
+                        <li><a href="#">网站地图</a></li>
+                        <li><a href="#">XXXX</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="updiv" id="div1">
+        <div class="close">
+            <button onclick="guanbi()">close</button>
+        </div>
+        <div class="upkuang" >
+            <div class="zhdl">
+                <p class="zhdltxt">账号登录</p>
+                <input class="inp1" type="text" placeholder="手机号/邮箱" id="yhm" onblur="hide()" onfocus="find()">
+                <p class="notice" id="n1" style="font-size: 10px;" ></p>
+                <input class="inp2" type="password" placeholder="密码" id="mm" onfocus="find2()" onblur="hide2()">
+                <p class="notice" id="n2" style="font-size: 10px;"></p>
+                <input type="checkbox" checked><p class="jizhu">记住我</p>
+                <p class="forget"><a href="#">忘记密码</a></p>
+                <button class="up22" onclick="check()">登录</button></br></br></br>
+                <p class="zhuce" onclick="xszc()"><a href="#">注册</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="zhucediv" id="div2">
+        <div class="close2">
+            <button onclick="guanbi2()">X</button>
+        </div>
+        <dic class="zckuang">
+            <p class="zhdltxt">注册账号</p>
+            <input class="inp11" type="text" placeholder="手机号/邮箱" id="yhm11" onblur="hide3()" onfocus="find3()">
+            <p class="notice" id="n11" style="font-size: 10px;" ></p>
+            <input class="inp22" type="password" placeholder="密码" id="mm11" onfocus="find4()" onblur="hide4()">
+            <p class="notice" id="n22" style="font-size: 10px;"></p>
+            <input class="inp22" type="password" placeholder="再次输入密码" id="mm12" onfocus="find5()" onblur="hide5()">
+            <p class="notice" id="n33" style="font-size: 10px;"></p>
+            <button class="zhuce22" onclick="zcgb()">注册</button>
+        </dic>
+    </div>
+	</div>
+</body>
+<script type="text/javascript">
+	function find(){
+	n1.innerHTML="请输入4~10位用户名";
+	}
+	function hide(){
+		n1.innerHTML="";
+	}
+	function find2(){
+		n2.innerHTML="请输入6~12位密码";
+	}
+	function hide2(){
+	    n2.innerHTML="";
+	}
+	function xianshi(){
+	    document.getElementById('div1').style.display='block';
+	}
+	function guanbi(){
+	    document.getElementById('div1').style.display='none';
+	}
+	function shipin1(){
+	    document.getElementById('shipin1').style.display='block';
+	}
+	function shipin1hide(){
+	    var z=document.getElementById("shipin11");
+	    document.getElementById('shipin1').style.display='none';
+	    z.load();
+	}
+	function shipin2(){
+	    document.getElementById('shipin2').style.display='block';
+	}
+	function shipin2hide(){
+	    var x=document.getElementById("shipin22");
+	    document.getElementById('shipin2').style.display='none';
+	    x.load();
+	}
+	function shipin3(){
+	    document.getElementById('shipin3').style.display='block';
+	}
+	function shipin3hide(){
+	    var c=document.getElementById("shipin33");
+	    document.getElementById('shipin3').style.display='none';
+	    c.load();
+	}
+	function check(){
+	    var i=document.getElementById("yhm").value.length;
+	    var j=document.getElementById("mm").value.length;
+	    var k=document.getElementById("touxiang");		
+	    if(i==w&&j==q){
+	        document.getElementById('div1').style.display='none';
+	        // k.src="头像.jpg";
+	        document.getElementById('up').style.display='none';
+	        document.getElementById('up2').style.display='block';
+	    }
+	    else if(i!=w){
+	        var p1=document.getElementById("n1")
+	        var text1=document.createTextNode( "用户名不存在" ); 
+	        p1.appendChild(text1);
+	    }
+	    else if(j!=q){
+	        var p2=document.getElementById("n2")
+	        var text2=document.createTextNode( "密码错误" ); 
+	        p2.appendChild(text2);
+	    }
+	    else{
+	        var p1=document.getElementById("n1")
+	        var text1=document.createTextNode( "请输入用户名" ); 
+	        p1.appendChild(text1);
+	        var p2=document.getElementById("n2")
+	        var text2=document.createTextNode( "请输入密码位" ); 
+	        p2.appendChild(text2);
+	    }
+
+	}
+	function tuichu(){
+	    document.getElementById('up2').style.display='none';
+	    document.getElementById('up').style.display='block';            
+	}
+	function xszc(){
+	    document.getElementById('div1').style.display='none';
+	    document.getElementById('div2').style.display='block';
+	}
+	function guanbi2(){
+	    document.getElementById('div2').style.display='none';
+	}
+	var w;
+	function find3(){
+		n11.innerHTML="请输入4~10位用户名";
+	}
+	function hide3(){
+	    n11.innerHTML="";
+	    w=document.getElementById("yhm11").value.length;
+	    if(w<=10&&w>=4){
+	        var p1=document.getElementById("n11")
+	        var text1=document.createTextNode( "账号可用" ); 
+	        p1.appendChild(text1);
+	    }
+	    else if(w>10||w<4&&w>0){
+	        var p1=document.getElementById("n11")
+	        var text1=document.createTextNode( "用户名位数不对" ); 
+	        p1.appendChild(text1);
+	    }
+	    else{
+	        var p1=document.getElementById("n11")
+	        var text1=document.createTextNode( "请输入4~10位用户名" ); 
+	        p1.appendChild(text1);
+	    }
+	}
+	var q;
+	function find4(){
+		n22.innerHTML="请输入6~12位密码";
+	}
+	function hide4(){
+	    n22.innerHTML="";
+	    q=document.getElementById("mm11").value.length;
+	    if(q<=12&&q>=6){
+	        var p1=document.getElementById("n22")
+	        var text1=document.createTextNode( "密码可用" ); 
+	        p1.appendChild(text1);
+	    }
+	    else if(q>12||q<6&&q>0){
+	        var p1=document.getElementById("n22")
+	        var text1=document.createTextNode( "密码位数不对" ); 
+	        p1.appendChild(text1);
+	    }
+	    else{
+	        var p1=document.getElementById("n22")
+	        var text1=document.createTextNode( "请输入6~12位密码" ); 
+	        p1.appendChild(text1);
+	    }
+	}
+	var k;
+	function find5(){
+		n33.innerHTML="请再次输入密码";
+	}
+	function hide5(){
+	    n33.innerHTML="";
+	    var k=document.getElementById("mm12").value.length;
+	    if(k==q){
+	        var p1=document.getElementById("n33")
+	        var text1=document.createTextNode( "密码相同" ); 
+	        p1.appendChild(text1);
+	    }
+	    else{
+	        var p1=document.getElementById("n33")
+	        var text1=document.createTextNode( "密码不同" ); 
+	        p1.appendChild(text1);
+	    }
+	}
+	function zcgb(){
+	    document.getElementById('div2').style.display='none';
+	    document.getElementById('div1').style.display='block';
+	}
+	window.onload = function() {
+            var list = document.getElementById('list');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var sp=document.getElementById("buttons").children;
+            console.log();
+            function animate(offset) {
+                //获取的是style.left，是相对左边获取距离，所以第一张图后style.left都为负值，
+                //且style.left获取的是字符串，需要用parseInt()取整转化为数字。
+                var newLeft = parseInt(list.style.left) + offset;
+                list.style.left = newLeft + 'px';
+                if(newLeft<-3000){
+				     list.style.left = -600 + 'px';
+				}
+				if(newLeft>-600){
+				     list.style.left = -3000 + 'px';
+				}
+            }
+
+            prev.onclick = function() {             
+                animate(600);
+                for(let i=0;i<sp.length;i++){
+                	sp[i].className='';
+                }
+                var n=(-parseInt(list.style.left)/600);
+                sp[n-1].className='on'
+            }
+            next.onclick = function() {  
+                animate(-600);
+                for(let i=0;i<sp.length;i++){
+                	sp[i].className='';
+                }
+                var n=(-parseInt(list.style.left)/600);
+                sp[n-1].className='on'
+            }
+        }
+
+</script>
+</html>
