@@ -1,0 +1,715 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: pink;
+}
+a:active{
+    color: pink;
+}
+.first{
+    background-size:100% 100%;
+    height: 800px;
+}
+.whole{
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    width: 1200px;
+    height: 72px;
+    position: relative;
+}
+.logo{
+    display: block;
+    height: 35px;
+    width: 168px;
+    left: 0px;
+    top: 13px;
+    position: absolute;
+}
+.logo h1{
+    display: block;
+    height: 35px;
+    width: 168px;
+    overflow: hidden;
+    font-size: 30px;
+}
+.menu{
+    position: absolute;
+    display: block;
+    height: 70px;
+    top: 0px;
+    right: 500px;
+}
+.nav:hover{
+    background: rgba(10, 10, 10, 0.7);
+}
+.item{
+    display: inline-block;
+    height: 70px;
+    width: 102px;
+    float:left;
+    text-align: center;
+}
+.txt{
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menuxiala{
+    background: rgba(10, 10, 10, 0.7);
+    width: 98px;
+    position: absolute;
+    display: none;
+    color: black;
+    line-height: 50px;
+}
+.item:hover .menuxiala{
+    display: block;
+}
+.nav1{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 150px;
+}
+.up{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 150px;
+}
+.up img{
+    max-width: 50px;
+    position: absolute;
+    right: 2px;
+}
+.up2{
+    display: none;
+}
+.up2 img{
+    max-width: 50px;
+    position: absolute;
+    right: 2px;
+}
+.up:hover .sign{
+    display: block;
+}
+.up2:hover .signhou{
+    display: block;
+}
+.sign{
+    background: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    top: 52px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: thistle;
+    display: none;
+}
+.signtxt{
+    line-height: 50px;
+}
+.upin{
+    border-radius:5px 5px 5px 5px;
+    background: royalblue;
+    margin: 0 auto;
+    color: white;
+    width: 160px;
+    height: 30px;
+    padding-top: 6px;
+}
+.signhou{
+    background: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    top: 52px;
+    width: 200px;
+    height: 170px;
+    color: white;
+    display: none;
+}
+.houtouxiang img{
+    max-width: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.houtouxiang p{
+    line-height: 60px;
+    margin-left: 100px;
+}
+.gongneng{
+    margin: 0 auto;
+    height: 60px;
+    width: 180px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgb(54, 53, 53);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.shoucang{
+    float: left;
+    width: 60px;
+    height: 60px;
+    background:royalblue ;
+    border-radius:5px 5px 5px 5px;
+    font-size: 22px;
+    text-align: center;
+}
+.buy{
+    float: right;
+    width: 60px;
+    height: 60px;
+    background:royalblue ;
+    border-radius:5px 5px 5px 5px;
+    font-size: 22px;
+    text-align: center;
+}
+.guanli{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    float: left;
+    margin-left: 5px;
+}
+.tuichu{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    float: right;
+    margin-right: 5px;
+}
+.whole2{
+    height: 728px;
+}
+.whole2txt{
+    color: white;
+    width: 1200px;
+    height: 270px;
+    font-style: italic;
+    padding-top: 30px;
+    line-height: 80px;
+}
+.whole2txt h1{
+    font-size: 50px;
+    margin-left: 15px;
+}
+.whole2txt h2{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.whole2txt h3{
+    margin-left: 300px;
+}
+.RPG{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    position: relative;
+}
+.MOBA{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    margin-left: 61px;
+    position: relative;
+}
+.FPS{
+    margin-top: 10px;
+    float: left;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    margin-left: 61px;
+    position: relative;
+}
+.unspent{
+    margin-top: 10px;
+    float: right;
+    height: 300px;
+    width: 250px;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    border-radius:5px 5px 5px 5px;
+    position: relative;
+}
+.txt2{
+    color: white;
+    font-style: italic;
+    position: absolute;
+}
+.big1{
+    font-size: 50px;
+    margin-left: 60px;
+    margin-top: 115px;
+}
+.big2{
+    font-size: 50px;
+    margin-left: 60px;
+    margin-top: 115px;
+}
+.big3{
+    font-size: 50px;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: 115px;
+}
+.big4{
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 135px;
+}
+.hide{
+    height: 300px;
+    width: 250px;
+    background: white;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-family: "方正舒体";
+    font-size: 18px;
+    display: none;
+    position: absolute;
+}
+.RPG:hover .hide{
+    display: block;
+}
+.RPG:hover .txt2{
+    display: none;
+}
+.RPGhide{
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.MOBA:hover .hide{
+    display: block;
+}
+.MOBA:hover .txt2{
+    display: none;
+}
+.MOBAhide{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.FPS:hover .hide{
+    display: block;
+}
+.FPS:hover .txt2{
+    display: none;
+}
+.FPShide{
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 23px;
+}
+.unspent:hover .hide{
+    display: block;
+}
+.unspent:hover .txt2{
+    display: none;
+}
+.hide1{
+    padding-top: 130px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.paiming{
+    width: 1185px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.hot{
+    float: left;
+    background: rgba(54, 54, 58, 0.7);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.game div{
+    border-radius: 5px 5px 5px 5px;
+}
+.hottxt{
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+.game{
+    font-size: 14px;
+    line-height: 25px;
+}
+.game1{
+    color: tomato;
+}
+.t1{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-top: 1px;
+    margin-left: 1px;
+    display: inline-block;
+    width: 30px;
+}
+.t2{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 130px;
+}
+.t3{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 40px;
+}
+.t4{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 38px;
+}
+.t5{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 40px;
+}
+.t6{
+    color: white;
+    background: rgba(39, 39, 39, 0.5);
+    margin-left: 1px;
+    display: inline-block;
+    width: 30px;
+}
+.game2{
+    position: relative;
+}
+.hy{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -80px;
+    left: 400px;
+    display: none;
+}
+.hy1{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -106px;
+    left: 400px;
+    display: none;
+}
+.hy2{
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    top: -132px;
+    left: 400px;
+    display: none;
+}
+.jieshao1{
+    float: right;
+    font-size: 70px;
+    margin-top: 170px;
+    font-style: italic;
+}
+.end{
+    
+    background: black;
+    height: 400px;
+}
+.end1{
+    background:silver;
+    height: 400px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.end11{
+    background: black;
+    height: 60px;
+    padding-top: 17px;
+}
+.end11 p{
+    font-size: 28px;
+    color: white;
+    margin-left: 20px;
+    display: inline;
+}
+.tp0{
+    display: inline;
+    position: relative;
+}
+.tp{
+    margin-left: 20px;
+}
+.tp2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 10px;
+    top: -121px;
+    background: white;
+    background-image: url(qqerwi.png);
+    background-size:100% 100%;
+    display: none;
+}
+.tp0:hover .tp2{
+    display: block;
+}
+.tp3{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 10px;
+    top: -121px;
+    background: white;
+    background-image: url(wxerwi.png);
+    background-size:100% 100%;
+    display: none;
+}
+.tp0:hover .tp3{
+    display: block;
+}
+.end12{
+    background: black;
+    height: 282px;
+    margin-top: 2px;
+    padding-top: 40px;
+    position: relative;
+}
+.join{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.jointxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.joinlist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.contact{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.contacttxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.contactlist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.legao{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.legaotxt{
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+}
+.legaolist{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 40px;
+}
+.endlogo{
+    float: right;
+    margin-top: 90px;
+    margin-right: 150px;
+    color: turquoise;
+    font-style: italic;
+}
+.endend{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.endendlist li{
+    float: left;
+    width: 100px;
+    font-size: 14px;
+}
+.updiv{
+    display: none;
+    width: 700px;
+    height: 350px;
+    position: fixed;
+    top: 220px;
+    left: 400px;
+    background-image: url(只狼2.jpg);
+    background-size:100% 100%;
+}
+.close{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    opacity: 0.1;
+}
+.upkuang{
+    width: 340px;
+    height: 300px;
+    background:gainsboro;
+    opacity: 0.8;
+    margin-left: 25px;
+    position: relative;
+}
+.zhdl{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.zhdltxt{
+    font-size: 25px;
+}
+.notice{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.inp1{
+    display: block;
+    width:300px;
+    height: 40px;
+    text-indent: 8px;
+    margin-top: 30px;
+    margin-left: 7px;
+}
+.inp2{
+    display: block;
+    width:300px;
+    height: 40px;
+    text-indent: 8px;
+    margin-left: 7px;
+}
+.jizhu{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+}
+.forget{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+    float: right;
+}
+.zhuce{
+    display: inline;
+    color: grey;
+    font-size: 12px;
+    float: right;
+    margin-top: 6px;
+}
+.up22{
+    position: absolute;
+    top: 230px;
+    left: 9px;
+    border-radius:50px 50px 50px 50px;
+    background: aqua;
+    width:300px;
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+.zhucediv{
+    display: none;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    top: 220px;
+    left: 600px;
+    background: white;
+    border-radius:5px 5px 5px 5px;
+}
+.inp11{
+    display: block;
+    width:250px;
+    height: 30px;
+    text-indent: 8px;
+    margin-top: 30px;
+    margin-left: 7px;
+}
+.inp22{
+    display: block;
+    width:250px;
+    height: 30px;
+    text-indent: 8px;
+    margin-left: 7px;
+}
+.zhuce22{
+    position: absolute;
+    top: 280px;
+    left: 45px;
+    border-radius:50px 50px 50px 50px;
+    background: aqua;
+    width:200px;
+    text-align: center;
+    height: 30px;
+    color: white;
+}
+
